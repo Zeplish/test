@@ -83,8 +83,8 @@ for user in users:
         else:
             sys.exit("Invalid Mode Selected. Please Try Again.")
         client(InviteToChannelRequest(target_group_entity,[user_to_add]))
-        print("Waiting for 10-30 Seconds...")
-        time.sleep(random.randrange(10, 30))
+        print("Waiting for 30-60 Seconds...")
+        time.sleep(random.randrange(30, 60))
     except PeerFloodError:
         print("Getting Flood Error from telegram. Script is stopping now. Please try again after some time.")
     except UserPrivacyRestrictedError:
