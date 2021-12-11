@@ -10,9 +10,9 @@ import time
 from time import sleep
 import random
 
-api_id = 11707872
-api_hash = 'fb1a7139f148e0cb4d4b83f013b43e40'
-phone = '+919899901485'
+api_id = 14859396
+api_hash = '7f863cf101586de652fbbe48e93e7a71'
+phone = '+919899993485'
 client = TelegramClient(phone, api_id, api_hash)
 
 client.connect()
