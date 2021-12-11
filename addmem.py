@@ -7,6 +7,7 @@ import sys
 import csv
 import traceback
 import time
+from time import sleep
 import random
 
 api_id = 15724831
@@ -83,8 +84,8 @@ for user in users:
         else:
             sys.exit("Invalid Mode Selected. Please Try Again.")
         client(InviteToChannelRequest(target_group_entity,[user_to_add]))
-        print("Waiting for 30-60 Seconds...")
-        time.sleep(random.randrange(30, 60))
+        print("Waiting for 10-40 Seconds...")
+        time.sleep(random.randrange(10, 40))
     except PeerFloodError:
         print("Getting Flood Error from telegram. Script is stopping now. Please try again after some time.")
     except UserPrivacyRestrictedError:
